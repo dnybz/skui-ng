@@ -1,0 +1,9 @@
+[submodule "3rdparty"]
+	path = 3rdparty
+	url = https://github.com/skui-org/3rdparty.git
+[submodule "ci"]
+	path = ci
+	url = https://github.com/skui-org/ci.git
+[submodule "cmake"]
+	path = cmake
+	url = https://github.com/skui-org/cmake.git
