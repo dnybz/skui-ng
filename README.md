@@ -1,16 +1,15 @@
 # Introduction
 
+Skia-based C++ UI framework Next Generation fork from https://github.com/skui-org/skui
+
 UI framework that uses [Skia](https://skia.org/) as a low-level drawing toolkit.
 It uses the newest features of the C++ Standard library (currently targetting C++17).
 
+Thank Ruben Van Boxem!
+
 # Status
 
-SkUI is in a pre-release development phase, and the API is definitely not stable.
-
-[![Build Status](https://app.travis-ci.com/skui-org/skui.svg?branch=master)](https://app.travis-ci.com/skui-org/skui)
-[![Build status](https://ci.appveyor.com/api/projects/status/s9t7o9k8u0p15e0x?svg=true)](https://ci.appveyor.com/project/RubenVanBoxem/skui)
-[![codecov](https://codecov.io/gh/skui-org/skui/branch/master/graph/badge.svg)](https://codecov.io/gh/skui-org/skui)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e461d12770cf4234b7d5a1ffcd880c2c)](https://www.codacy.com/manual/rubenvb/skui?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=skui-org/skui&amp;utm_campaign=Badge_Grade)
+SkUI-Ng is in a pre-release development phase, and the API is definitely not stable.
 
 | Operating System | Compiler                | Supported          | Notes |
 |------------------| ------------------------|--------------------| ----- |
@@ -30,7 +29,7 @@ SkUI is in a pre-release development phase, and the API is definitely not stable
 
 # Components
 
-SkUI is subdivided in several modules which can depend on other modules but shouldn't become a dependency mess:
+SkUI-Ng is subdivided in several modules which can depend on other modules but shouldn't become a dependency mess:
 
  * Core: basic functionality, including signals, properties, strings, paths, application, os abstraction...
  * CSS: CSS parser built on top of Boost.Spirit X3.
@@ -38,7 +37,7 @@ SkUI is subdivided in several modules which can depend on other modules but shou
  * GUI: abstraction of platform-specific UI code, including event loops, windows, input, ...
  * OpenGL: abstraction of platform-specific OpenGL initialization code, header differences, ...
  * ...
- * Examples: example programs showing SkUI features
+ * Examples: example programs showing SkUI-Ng features
  * Tests: unit tests for various components to ensure correct and expected behaviour now and in the future.
 
 This list will grow (and change) as the library's design takes shape.
@@ -47,11 +46,11 @@ This list will grow (and change) as the library's design takes shape.
 
 Clone this repository
 
-    git clone https://github.com/skui-org/skui.git
+    git clone https://github.com/dnybz/skui-ng.git
 
 After cloning this repository, make sure the submodules are up to date
 
-    cd skui
+    cd skui-ng
     git submodule update --init --recursive
 
 Create and navigate to a seperate build directory, e.g.
@@ -71,51 +70,3 @@ Then build
 And run the tests to ensure nothing is wrong
 
     ctest
-
-# Roadmap
-
-## 0.0.x
-
- * establish a logical basis for UI functionality, including:
-   * signals, properties, strings
-   * basic drawing functionality
-   * event handling
-   * basic UI controls and layout engine
-   * Application window and event abstraction
-     * Windows
-     * Linux
-     * OS X
-     * ...
-
-## 0.1.x
-
- * OS Notification system implementation
-   * taskbar icon
-   * notifications
-   * ...
- * Improve core logic and functionality.
- * OS theming of all controls and windows
-
-## 0.x.x
-
- * More application logic (model/views, ...)
- * process handling
- * advanced drawing
- * advanced UI controls, including:
-   * scrollbars
-   * tables, lists, etc.
- * File I/O systems?
- * Add missing unit tests
- * Add missing documentation
- * ...
-
-## 1.x.x
-
- * Stability and features of a basic UI framework
- * Improve platform support
- * Solve all them bugs.
- * Correct all them documentation typos.
-
-## x.x.x
-
- * Supreme world domination through superiour benevolent A.I.
